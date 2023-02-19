@@ -56,6 +56,12 @@ body {
   }
 }
 
+.link-title:hover {
+  color: #FF6464;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
 .menu__list {
   height: 82px;
   display: flex;
@@ -217,12 +223,6 @@ body {
   .post-item__title {
     font-size: 22px;
   }
-}
-
-.post-item__title:hover {
-  color: #FF6464;
-  transition: color 0.3s;
-  cursor: pointer;
 }
 
 .post-item__info {

@@ -64,6 +64,11 @@ body {
     font-size: 18px;
 }
 }
+.link-title:hover {
+  color: #FF6464;
+  transition: color 0.3s;
+  cursor: pointer;
+}
 
 // HEADER
 
@@ -198,11 +203,6 @@ body {
     font-size: 22px;
 }
 }
-.post-item__title:hover {
-  color: #FF6464;
-  transition: color 0.3s;
-  cursor: pointer;
-}
 .post-item__info {
   font-size: 18px;
   margin: 20px 0px 16px 0px;
@@ -303,6 +303,7 @@ body {
 }
 
 // BLOG PAGE
+
 .blog {
   margin: 0px 8px;
 }
