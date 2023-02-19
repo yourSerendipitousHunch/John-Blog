@@ -1,122 +1,124 @@
-// RESET CSS
-
-@import url('../css/reset.css');
-
-// FONTS
-
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap');
-
-// ICONS
-
-@import url('../fonts/icons.css');
-
-// VARIABLES
-
-$minWidth: 320px;
-$maxWidth: 1152px;
-$maxWidthContainer: 856px;
-$md1: $maxWidthContainer + 12px;
-$md2: 991.98px;
-$md3: 767.98px;
-$md4: 479.98px;
-
-// MAIN PAGE LAYOUT
-
+@import url("../css/reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap");
+@import url("../fonts/icons.css");
 .container {
-    max-width: $maxWidthContainer;
-    margin: auto;
-    @media (max-width: $md2) {
-        max-width: 750px;
-    }
-    @media (max-width: $md3) {
-        max-width: none;
-        padding: 0 10px;
-    }
+  max-width: 856px;
+  margin: auto;
 }
-
-// MAIN PAGE STYLES
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767.98px) {
+  .container {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
 
 body {
-  font-family: 'Heebo';
+  font-family: "Heebo";
 }
+
 .page {
   padding-top: 90px;
   color: #21243D;
-  @media (max-width: $md2) {
+}
+@media (max-width: 991.98px) {
+  .page {
     padding-top: 33px;
+  }
 }
-}
+
 .title {
   font-weight: 700;
   font-size: 44px;
   line-height: 1.36; /* 60/44 */
-  @media (max-width: $md3) {
+}
+@media (max-width: 767.98px) {
+  .title {
     font-size: 32px;
+  }
 }
-}
+
 .text {
   line-height: 150%; /* 24/16 */
 }
 
-// HEADER
-
-.menu__list { 
-  height: 82px;  
+.menu__list {
+  height: 82px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 32px;
-  @media (max-width: $md3) {
+}
+@media (max-width: 767.98px) {
+  .menu__list {
     justify-content: center;
   }
 }
+
 .menu__link {
   font-size: 20px;
   font-weight: 500;
 }
+
 .menu__link:hover {
   color: #FF6464;
   transition: color 0.3s;
 }
 
-// ABOUT ME
-
 .about-me__box {
   padding: 38px 0px 70px 0px;
   display: flex;
   justify-content: space-between;
-  @media (max-width: $md2) {
+}
+@media (max-width: 991.98px) {
+  .about-me__box {
     flex-direction: column-reverse;
     align-items: center;
     gap: 34px;
   }
-  @media (max-width: $md2) {
+}
+@media (max-width: 991.98px) {
+  .about-me__box {
     padding: 0px 0px 59px 0px;
+  }
 }
-}
+
 .about-me__content {
   padding-top: 18px;
   flex: 0 1 56%;
   display: flex;
   flex-direction: column;
-  @media (max-width: $md2) {
+}
+@media (max-width: 991.98px) {
+  .about-me__content {
     align-items: center;
     text-align: center;
   }
 }
+
 .about-me__title {
   margin-bottom: 25px;
-  @media (max-width: $md3) {
+}
+@media (max-width: 767.98px) {
+  .about-me__title {
     margin-bottom: 20px;
+  }
 }
-}
+
 .about-me__text {
   margin-bottom: 38px;
-  @media (max-width: $md3) {
+}
+@media (max-width: 767.98px) {
+  .about-me__text {
     padding: 0px 15px;
     margin-bottom: 25px;
+  }
 }
-}
+
 .about-me__btn {
   display: inline-flex;
   justify-content: center;
@@ -131,14 +133,18 @@ body {
   border-radius: 2px;
   transition: background-color 0.3s;
 }
+
 .about-me__btn:hover {
   background-color: #ff2d2d;
 }
+
 .about-me__avatar {
   flex: 0 0 28%;
-  img {
-    max-width: 100%;
-    border-radius: 50%;
-    box-shadow: -5px 13px 0px 0px #EDF7FA;
-  }
 }
+.about-me__avatar img {
+  max-width: 100%;
+  border-radius: 50%;
+  box-shadow: -5px 13px 0px 0px #EDF7FA;
+}
+
+/*# sourceMappingURL=index.css.map */
