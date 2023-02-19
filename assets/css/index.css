@@ -74,7 +74,8 @@ body {
   font-weight: 500;
 }
 
-.menu__link:hover {
+.menu__link:hover,
+.menu__link.active {
   color: #FF6464;
   transition: color 0.3s;
 }
@@ -341,6 +342,23 @@ body {
 .social__item {
   margin: 0px 17px;
   cursor: pointer;
+}
+
+.blog {
+  margin: 0px 8px;
+}
+
+.blog__title {
+  margin-bottom: 25px;
+}
+
+.blog__item {
+  padding: 30px 0px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.blog__info .work__category {
+  display: inline;
 }
 
 /*# sourceMappingURL=index.css.map */
